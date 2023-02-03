@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+    background-color: rgb(26, 23, 23);
+}
+
+.content{
+    position: absolute;
+
+    width: 500px;
+    height: 600px;
+    background-color: rgb(24, 24, 24);
+    border: 4px white dotted;
+    transform: translate(-50%, -50%);
+
+    top: 50%;
+    left: 50%;
+
+    display: grid;
+    /* flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+article{
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+    background-color: rgb(34, 34, 34);
+    border: 15px solid white;
+    border-radius: 50%;
+
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+span{
+    display: block;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: red;
+    border-radius: 50%;
+}
+
+input{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    border: 1px blue solid;
+    border-radius: 30px;
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btns-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#generateBtn{
+    background-color: #18f98f;
+    color: rgb(24, 24, 24);
+}
+
+#copyBtn{
+    background-color: rgb(24, 24, 24);
+    color: #18f98f;
+    border: 2px solid #18f98f;
+}
+
+#info{
+    background-color: rgb(255, 255, 255, 0.3);
+    font-size: 1.3rem;
+    position: fixed;
+    padding: 10px 20px;
+    top: 10px;
+    right: 10px;
+    color: white;
+    transition: 0.5s;
+    transform: translateX(calc(100% + 10px));
+}
